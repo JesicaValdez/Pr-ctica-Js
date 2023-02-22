@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var alumno = {
+            nombre:'Marcos Risotto',
+            edad: '32',
+            email: 'marcosrisotto@gmail.com',
+
+            saludar: function(){
+                document.write('Hola soy Marcos')
+            },
+            cursos:['freelancer','wordpress','frontend']
+        }
+
+        alumno.edad = 33;
+        alumno.nombre = 'Marcos Joaquin Risotto'
+
+        document.write('La edad de mi alumno es: '+ alumno.edad + '<br>');
+        document.write('El nombre de mi alumno es: '+alumno['nombre'] + '<br>');
+        document.write("Primer Curso: "+alumno.cursos[1]+"<br>")
+        alumno.saludar()
+
+    </script>
+</body>
+</html>

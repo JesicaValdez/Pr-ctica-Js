@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encontrando objetos en Arrays</title>
+</head>
+<body>
+    <ul id='contenedor'>
+    </ul>
+    
+<script>
+    var numeros = new Array(3,5,2,7,8,6,9)
+
+    var loTiene = numeros.find(function(item){
+        return item === 5
+    })
+
+    var loTiene2 = numeros.findIndex(function(item){
+        return item === 5
+    })
+
+    document.write(loTiene + " lo tiene.");
+    document.write(' Su posicion es: '+ loTiene2);
+
+</script>
+</body>
+</html>

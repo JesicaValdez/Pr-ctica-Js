@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom - maneras de leer nodos</title>
+</head>
+<body>
+    <h1 id='titulo'>Listado</h1>
+    <ul id="listado">
+        <li class="hijo">Soy un Hijo</li>
+        <li class="hijo">Soy un Hijo 2</li>
+        <li class="hijo">Soy un Hijo 3</li>
+    </ul>
+
+    <script>
+        let contenido = document.getElementById('listado')
+        let losTres = document.getElementsByTagName('li')
+        let otraForma= document.getElementsByClassName('')
+        let formaQuerySelector = document.querySelector('ul li:first.child')
+        let formaQuerySelectorAll = document.querySelectorAll('.hije')
+    </script>
+</body>
+</html>

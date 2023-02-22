@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaracion de Clases</title>
+</head>
+<body>
+    
+
+    <script>
+        class Alumno{
+            constructor(nombre, edad, email){
+                this.nombre = nombre
+                this.edad = edad
+                this.email = email
+            }
+            saludar(){
+                document.write('Saludo'+this.nombre)
+            }
+        }
+
+        let marcos = new Alumno('Marcos Risotto',32,'marcos@risotto.com')
+    document.write(marcos.nomnbre)
+    </script>
+</body>
+</html>

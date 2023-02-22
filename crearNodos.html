@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nodos</title>
+</head>
+<body>
+    <h1 id='titulo'>Listado</h1>
+    <ul id="listado">
+        <li class="hijo">Soy un Hijo</li>
+        <li class="hijo">Soy un Hijo 2</li>
+        <li class="hijo">Soy un Hijo 3</li>
+    </ul>
+
+    <script>
+        let nodoo = document.createElement('h1')
+        let nodo2 = document.createTextNode('Soy un texto')
+        /// esto esta creado dentro del scope de Javascript hay 4 metodos para agregarlos al html
+
+        let nodo = document.createElement('li')
+        let txt = document.createTextNode('Soy un hijo 4')
+        let padre = document.getElementById('listado')
+        padre.appendChild(nodo)
+        let nodo5 = document.createElement('li')
+        let txt5 = document.createTextNode('Soy un hijo 5')
+        nodo5.appendChild(txt5)
+        padre.append(nodo2, nodo5)
+    </script>
+</body>
+</html>

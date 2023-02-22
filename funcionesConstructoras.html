@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Constructoras</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function Alumno(nombre, edad, email){
+            this.nombre= nombre
+            this.edad= edad
+            this.email = email
+            this.saludar = function(){
+                document.write('Hola Soy '+nombre+'<br>')
+            }
+        }
+
+        let marcos = new Alumno('Marcos Risotto', 32, 'marcos@risotto.com')
+        let martin = new Alumno('Martin Correa', 33, 'martin@correa.com')
+
+        marcos.saludar()
+        document.write(marcos.nombre+'<br>')
+    </script>
+</body>
+</html>

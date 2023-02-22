@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrando Arrays</title>
+</head>
+<body>
+    <ul id='contenedor'>
+    </ul>
+    
+<script>
+        var dia = 3
+        var dias =  new Array('Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo')
+        
+        var diasLaborales = dias.filter(function(item){return item != 'Sabado' && item != 'Domingo'
+        })
+
+        for (var i=0; i < diasLaborales.length; i++){
+            document.write(diasLaborales[i]+"<br>")
+        }
+
+</script>
+</body>
+</html>
