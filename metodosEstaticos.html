@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metodo JS</title>
+    <title>Metodos Estáticos</title>
 </head>
 <body>
-            
+
+
+
+
     <script>
 
         class Humano{
@@ -26,16 +29,13 @@
             set nombre(nombre){
                 this._nombre = nombre;
             }
-        
+            static saludarEstatico(){
+                document.write('Saludo desde la clase directo')
+            }
         }
 
+        Humano.saludarEstatico()
         
-
-        let marcos = new Humano ('Marcos Risotto',32,'marcos@risotto.com')
-    
-    marcos.nombre ='Pedro Martin'
-    marcos.saludar()
-    console.log(marcos.nombre);
-</script>    
+    </script>
 </body>
 </html>
