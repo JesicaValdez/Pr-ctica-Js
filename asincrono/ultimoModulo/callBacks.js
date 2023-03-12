@@ -40,4 +40,11 @@ const solicitarDato = () => {
     });
 };
 
+// Forma de llamar PROMESAS
 solicitarDato().then((datos)=> console.log(datos));
+
+async function imprimirDatos(){
+    const llamadaDatos  = await solicitarDato ();
+    console.log(llamadaDatos, "desde el await")
+}
+imprimirDatos();
